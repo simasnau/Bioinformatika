@@ -1,0 +1,7 @@
+gclust -memiden 97 /mnt/e/Programavimas/VU/4\ Kursas/Bioinformatika/sorted.fasta > /mnt/e/Programavimas/VU/4\ Kursas/Bioinformatika/sorted.out
+
+perl script/sortgenome.pl --genomes-file /mnt/e/Programavimas/VU/4\ Kursas/Bioinformatika/combined.fasta --sortedgenomes-file /mnt/e/Programavimas/VU/4\ Kursas/Bioinformatika/sorted.fasta
+
+5) ./seqkit grep -f onlyids.txt sorted.fasta -o atrusiuoti.txt
+
+ grep -Po '(?<=>).*(?=\.\.\. \*$)' clustered.out > ids.txt
